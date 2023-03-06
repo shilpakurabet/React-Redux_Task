@@ -2,7 +2,7 @@
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
-import ProductDetails from "./components/ProductDetails";
+import PokemonDetails from "./components/PokemonDetails";
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route
             exact
-            path="/product-details/:category/:brand/:id"
-            element={<ProductDetails />}
+            path="/pokemon-details/:name"
+            element={<PokemonDetails />}
           />
         </Routes>
       </BrowserRouter>

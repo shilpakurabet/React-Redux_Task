@@ -4,7 +4,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { PUBLIC_IMAGE_PATH } from "../utils/constant";
 import Header from "./Header";
-import "./ProductDetails.css";
+import "./PokemonDetails.css";
 const ProductDetails = () => {
   const singleData = useSelector((state) => {
     if (state.Reducer.getSingleData) {
@@ -41,13 +41,13 @@ const ProductDetails = () => {
               </ul>
             </div>
             <div className="list">
-            <ul>
-              <strong> stats </strong>
-              {stats?.map((data) => {
-                return <li> {data.stat.name}</li>;
-              })}
-            </ul>
-            </div> 
+              <ul>
+                <strong> stats </strong>
+                {stats?.map((data) => {
+                  return <li> {data.stat.name}</li>;
+                })}
+              </ul>
+            </div>
           </div>
         </div>
       </div>

@@ -41,9 +41,7 @@ const Card = ({ data, searchQuery, sortByName }) => {
                 className="cardImage"
                 onClick={() => {
                   dispatch(getById(item.name));
-                  navigate(
-                    `/product-details/${item.category}/${item.brand}/${item.id}`
-                  );
+                  navigate(`/pokemon-details/${item.name}`);
                 }}>
                 <img
                   src={PUBLIC_IMAGE_PATH + "/pokemon.png"}
@@ -58,9 +56,7 @@ const Card = ({ data, searchQuery, sortByName }) => {
                 className="viewDetails"
                 onClick={() => {
                   dispatch(getById(item.name));
-                  navigate(
-                    `/product-details/${item.category}/${item.brand}/${item.id}`
-                  );
+                  navigate(`/pokemon-details/${item.name}`);
                 }}>
                 <button> view details </button>
               </div>
